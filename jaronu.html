@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central Jaronu - Centrales de Cuba</title>
+    <title>Central Jaronu (Brasil) - Centrales de Cuba</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; background: #f5f5f5; }
@@ -15,14 +15,20 @@
         .status { display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin: 10px 0 20px 0; }
         .open { background: #4CAF50; color: white; }
         .closed { background: #f44336; color: white; }
-        .info-grid { display: grid; gap: 20px; margin: 30px 0; }
-        .info-box { background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #2c5f2d; }
-        .info-box h3 { color: #2c5f2d; margin-bottom: 10px; font-size: 18px; }
-        .info-box p { line-height: 1.6; color: #333; }
+        .info-box { background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #2c5f2d; margin: 20px 0; }
+        .info-box h3 { color: #2c5f2d; margin-bottom: 15px; font-size: 18px; }
+        .info-box p { line-height: 1.8; color: #333; text-align: justify; }
         .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
-        .stat-card { background: #e8f5e9; padding: 15px; border-radius: 8px; text-align: center; }
-        .stat-card h4 { color: #2c5f2d; font-size: 14px; margin-bottom: 5px; }
-        .stat-card p { font-size: 24px; font-weight: bold; color: #1b5e20; }
+        .stat-card { background: #e8f5e9; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-card h4 { color: #2c5f2d; font-size: 14px; margin-bottom: 8px; }
+        .stat-card p { font-size: 28px; font-weight: bold; color: #1b5e20; margin: 5px 0; }
+        .stat-card small { color: #666; font-size: 13px; }
+        .specs { background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .specs h3 { color: #e65100; margin-bottom: 15px; }
+        .specs ul { list-style: none; padding-left: 0; }
+        .specs li { padding: 8px 0; border-bottom: 1px solid #ffe0b2; color: #333; }
+        .specs li:last-child { border-bottom: none; }
+        .specs strong { color: #e65100; }
     </style>
 </head>
 <body>
@@ -38,19 +44,54 @@
         
         <div class="info-box">
             <h3>📖 Historia</h3>
-            <p>[Aquí va la historia del Central Jaronu - agrega el texto que tengas sobre su fundación, importancia histórica, etc.]</p>
+            <p>
+                Jaronu es un ingenio de dos tandems de una capacidad de 600,000 sacos de 325 libras (97,500 toneladas) 
+                preparado para ampliarse a 900,000 sacos (146,250 toneladas) de capacidad en ciento cincuenta días de zafra. 
+                Los edificios, que cubren un área de 252,800 pies cuadrados, fueron fabricados por la Belmont Iron Works, de Filadelfia. 
+                Son todos de acero a prueba de fuego, con las paredes de metal desplegado revestido de una mezcla impermeable de cemento y arena. 
+                El material de acero pesa 5,000 toneladas. La instalación de los edificios se comenzó el 18 de Diciembre de 1920. 
+                El ingenio terminado inauguró su molienda el 26 de Diciembre de 1921.
+            </p>
+        </div>
+
+        <div class="specs">
+            <h3>🏭 Especificaciones Técnicas</h3>
+            <ul>
+                <li><strong>Fabricante:</strong> Belmont Iron Works, Filadelfia</li>
+                <li><strong>Configuración:</strong> Dos tandems</li>
+                <li><strong>Área de edificios:</strong> 252,800 pies cuadrados</li>
+                <li><strong>Material de acero:</strong> 5,000 toneladas</li>
+                <li><strong>Construcción iniciada:</strong> 18 de Diciembre de 1920</li>
+                <li><strong>Primera molienda:</strong> 26 de Diciembre de 1921</li>
+                <li><strong>Días de zafra:</strong> 150 días</li>
+            </ul>
         </div>
         
         <div class="stats">
             <div class="stat-card">
-                <h4>Molía antes de 1959</h4>
-                <p>[XXX]</p>
-                <small>sacos/año</small>
+                <h4>Capacidad Original</h4>
+                <p>600,000</p>
+                <small>sacos de 325 lbs</small>
+                <p style="font-size: 16px; margin-top: 10px;">97,500 toneladas</p>
             </div>
             <div class="stat-card">
-                <h4>Muele hoy</h4>
-                <p>0</p>
-                <small>Central cerrado</small>
+                <h4>Capacidad Ampliada</h4>
+                <p>900,000</p>
+                <small>sacos de 325 lbs</small>
+                <p style="font-size: 16px; margin-top: 10px;">146,250 toneladas</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h4>Estado Actual</h4>
+                <p style="font-size: 20px; color: #f44336;">CERRADO</p>
+                <small>No opera actualmente</small>
+            </div>
+            <div class="stat-card">
+                <h4>Año de Inauguración</h4>
+                <p>1921</p>
+                <small>Más de 100 años de historia</small>
             </div>
         </div>
     </div>
