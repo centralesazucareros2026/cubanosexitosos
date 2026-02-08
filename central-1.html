@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central [Nombre] - Centrales de Cuba</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        header { background: #2c5f2d; color: white; padding: 30px 20px; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; }
+        .back { display: inline-block; margin-bottom: 20px; color: #2c5f2d; text-decoration: none; }
+        h1 { color: #2c5f2d; margin-bottom: 20px; }
+        .info { margin: 20px 0; }
+        .info p { margin: 10px 0; line-height: 1.6; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin: 30px 0; }
+        .gallery img { width: 100%; border-radius: 8px; }
+        .video { margin: 30px 0; }
+        iframe { width: 100%; height: 400px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌾 Central [Nombre del Central]</h1>
+    </header>
+    
+    <div class="container">
+        <a href="../index.html" class="back">← Volver al inicio</a>
+        
+        <h1>Central [Nombre]</h1>
+        
+        <div class="info">
+            <p><strong>Provincia:</strong> [Nombre de provincia]</p>
+            <p><strong>Municipio:</strong> [Municipio]</p>
+            <p><strong>Año de fundación:</strong> [Año]</p>
+            <p><strong>Historia:</strong> [Descripción histórica del central]</p>
+        </div>
+        
+        <h2>Galería de Fotos</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+        </div>
+        
+        <h2>Video</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
