@@ -10,6 +10,19 @@
         header { background: #2c5f2d; color: white; padding: 40px 20px; text-align: center; }
         header h1 { font-size: 2.5em; margin-bottom: 10px; }
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .provincia-section { margin-bottom: 50px; }
+        .provincia-header { 
+            background: linear-gradient(135deg, #2c5f2d 0%, #3a7d3e 100%);
+            color: white; 
+            padding: 20px 30px; 
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        .provincia-header h2 { font-size: 1.8em; }
+        .provincia-header p { opacity: 0.9; margin-top: 5px; }
+        
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
         .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
@@ -20,49 +33,83 @@
         .closed { background: #f44336; color: white; }
         .card a { display: inline-block; margin-top: 15px; color: white; background: #2c5f2d; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
         .card a:hover { background: #1b4620; }
-        footer { text-align: center; padding: 30px; color: #666; margin-top: 50px; }
+        footer { text-align: center; padding: 30px; color: #666; margin-top: 50px; border-top: 2px solid #ddd; }
     </style>
 </head>
 <body>
     <header>
         <h1>🌾 Centrales Azucareros de Cuba</h1>
-        <p>168 Centrales Históricos</p>
+        <p>168 Centrales Históricos organizados por provincia</p>
     </header>
     
     <div class="container">
-        <div class="grid">
-            
-            <div class="card">
-                <h3>Central Jaronu (Brasil)</h3>
-                <span class="status closed">CERRADO</span>
-                <p><strong>Ubicación:</strong> [Provincia]</p>
-                <p>Uno de los centrales históricos de Cuba</p>
-                <a href="centrales/jaronu.html">Ver Ficha →</a>
+        
+        <!-- PROVINCIA: Camagüey (ejemplo) -->
+        <div class="provincia-section">
+            <div class="provincia-header">
+                <h2>📍 Camagüey</h2>
+                <p>X centrales en esta provincia</p>
             </div>
-
-            <div class="card">
-                <h3>Central Venezuela</h3>
-                <span class="status open">ABIERTO</span>
-                <p><strong>Ubicación:</strong> [Provincia]</p>
-                <p>Central actualmente en operación</p>
-                <a href="centrales/venezuela.html">Ver Ficha →</a>
+            <div class="grid">
+                <!-- Aquí van los centrales de Camagüey en orden alfabético -->
             </div>
-
-            <div class="card">
-                <h3>Central Morón</h3>
-                <span class="status closed">CERRADO</span>
-                <p><strong>Ubicación:</strong> Ciego de Ávila</p>
-                <p>Central histórico de la región</p>
-                <a href="centrales/moron.html">Ver Ficha →</a>
-            </div>
-
-            <!-- Agrega más centrales aquí copiando el bloque .card -->
-            
         </div>
+
+        <!-- PROVINCIA: Ciego de Ávila -->
+        <div class="provincia-section">
+            <div class="provincia-header">
+                <h2>📍 Ciego de Ávila</h2>
+                <p>1 central en esta provincia</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Central Morón</h3>
+                    <span class="status closed">CERRADO</span>
+                    <p>Central histórico de la región</p>
+                    <a href="centrales/moron.html">Ver Ficha →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROVINCIA: [Donde esté Jaronu] -->
+        <div class="provincia-section">
+            <div class="provincia-header">
+                <h2>📍 [Provincia de Jaronu]</h2>
+                <p>1 central en esta provincia</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Central Jaronu (Brasil)</h3>
+                    <span class="status closed">CERRADO</span>
+                    <p>Uno de los centrales históricos de Cuba</p>
+                    <a href="centrales/jaronu.html">Ver Ficha →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROVINCIA: [Donde esté Venezuela] -->
+        <div class="provincia-section">
+            <div class="provincia-header">
+                <h2>📍 [Provincia de Venezuela]</h2>
+                <p>1 central en esta provincia</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Central Venezuela</h3>
+                    <span class="status open">ABIERTO</span>
+                    <p>Central actualmente en operación</p>
+                    <a href="centrales/venezuela.html">Ver Ficha →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agrega más provincias aquí en orden alfabético -->
+        
     </div>
 
     <footer>
-        <p>Centrales Azucareros de Cuba © 2026</p>
+        <p>🇨🇺 Centrales Azucareros de Cuba © 2026</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Preservando la historia azucarera cubana</p>
     </footer>
 </body>
 </html>
